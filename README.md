@@ -48,9 +48,14 @@ Open `Edit > Preferences`, `Add-ons`, and search for 'Vesuvius'.
 Enable it with the tick, and unfold the preferences by clicking the drop down
 triangle. Set the "Path to data directory".
 
+If this doesn't seem to work try the following:
+1. Click the `Install` button near `Refresh` and navigate to `vesuvius.py`.
+2. Click `Refresh`. Look at your console, you should see an error like `Warning: add-on missing 'bl_info', this can cause poor performance!: /magic/add-on/path!`
+3. Go to the `magic path`, remove `vesuvius.py` and do the `ln` command above from there.
+
 ### Add a scan
 
-Create a new blender file, delete the default cube, and add a "Vesuvius Scan"
+Create a new blender file, delete the default cube (select it, press `del`), and add a "Vesuvius Scan"
 from the 3d viewport's Add menu `Shift+A` in object mode. In the add menu you'll
 see a drop down with all the scans.
 
